@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scientific Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <!-- Title -->
+        <div class="title">
+            Scientific Calculator
+        </div>
+
+        <!-- Manual button -->
+        <button id="manualBtn" class="manual-btn">
+            ⌨ Keyboard Manual
+        </button>
+
+
+        <!-- Display -->
+        <div class="display">
+
+            <div id="expression"></div>
+
+            <div id="result">0</div>
+
+        </div>
+
+
+        <!-- Angle mode -->
+        <div class="mode">
+
+            <button id="degreeBtn">
+                DEG
+            </button>
+
+            <button id="radianBtn">
+                RAD
+            </button>
+
+        </div>
+
+
+        <!-- Calculator buttons -->
+        <div class="buttons">
+
+            <!-- Scientific functions -->
+
+            <button class="function">sin</button>
+            <button class="function">cos</button>
+            <button class="function">tan</button>
+            <button class="function">log</button>
+            <button class="function">ln</button>
+
+            <button class="function">sin⁻¹</button>
+            <button class="function">cos⁻¹</button>
+            <button class="function">tan⁻¹</button>
+            <button class="function">√</button>
+            <button class="function">x²</button>
+
+            <button class="function">xʸ</button>
+            <button class="function">π</button>
+            <button class="function">e</button>
+            <button class="function">!</button>
+            <button class="function">(</button>
+
+            <button class="function">)</button>
+            <button class="operator">%</button>
+            <button class="clear">AC</button>
+            <button class="delete">DEL</button>
+            <button class="operator">÷</button>
+
+
+            <!-- Numbers -->
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">×</button>
+            <button class="operator">−</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">+</button>
+            <button class="equals">=</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button>.</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- KEYBOARD MANUAL -->
+    <!-- ========================= -->
+
+    <div id="manual" class="manual">
+
+        <div class="manual-box">
+
+            <div class="manual-header">
+
+                <h2>
+                    ⌨ Keyboard Shortcuts
+                </h2>
+
+                <button id="closeManual">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="shortcut-list">
+
+                <div>
+                    <b>0 - 9</b>
+                    <span>Numbers</span>
+                </div>
+
+                <div>
+                    <b>+</b>
+                    <span>Addition</span>
+                </div>
+
+                <div>
+                    <b>-</b>
+                    <span>Subtraction</span>
+                </div>
+
+                <div>
+                    <b>*</b>
+                    <span>Multiplication</span>
+                </div>
+
+                <div>
+                    <b>/</b>
+                    <span>Division</span>
+                </div>
+
+                <div>
+                    <b>%</b>
+                    <span>Percentage</span>
+                </div>
+
+                <div>
+                    <b>.</b>
+                    <span>Decimal</span>
+                </div>
+
+                <div>
+                    <b>Enter</b>
+                    <span>Calculate</span>
+                </div>
+
+                <div>
+                    <b>Backspace</b>
+                    <span>Delete</span>
+                </div>
+
+                <div>
+                    <b>Esc</b>
+                    <span>Clear</span>
+                </div>
+
+
+                <div class="shortcut-section">
+                    Brackets
+                </div>
+
+                <div>
+                    <b>B → O</b>
+                    <span>Open bracket (</span>
+                </div>
+
+                <div>
+                    <b>B → C</b>
+                    <span>Close bracket )</span>
+                </div>
+
+
+                <div class="shortcut-section">
+                    Scientific
+                </div>
+
+                <div>
+                    <b>S</b>
+                    <span>sin</span>
+                </div>
+
+                <div>
+                    <b>C</b>
+                    <span>cos</span>
+                </div>
+
+                <div>
+                    <b>T</b>
+                    <span>tan</span>
+                </div>
+
+                <div>
+                    <b>I</b>
+                    <span>sin⁻¹</span>
+                </div>
+
+                <div>
+                    <b>O</b>
+                    <span>cos⁻¹</span>
+                </div>
+
+                <div>
+                    <b>A</b>
+                    <span>tan⁻¹</span>
+                </div>
+
+                <div>
+                    <b>L</b>
+                    <span>log</span>
+                </div>
+
+                <div>
+                    <b>N</b>
+                    <span>ln</span>
+                </div>
+
+                <div>
+                    <b>R</b>
+                    <span>Square root</span>
+                </div>
+
+                <div>
+                    <b>X</b>
+                    <span>x²</span>
+                </div>
+
+                <div>
+                    <b>Y</b>
+                    <span>xʸ</span>
+                </div>
+
+                <div>
+                    <b>P</b>
+                    <span>π</span>
+                </div>
+
+                <div>
+                    <b>E</b>
+                    <span>e</span>
+                </div>
+
+                <div>
+                    <b>F</b>
+                    <span>Factorial</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
